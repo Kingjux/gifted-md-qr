@@ -19,7 +19,7 @@
 ## Deployment Methods
 ---
 1.  ***Click [`FORK`](https://github.com/Kingjux/venocyber-md-bot-qr/fork) and `Star ⭐ Repository` if you get help from repo.***
-2.  ***Deploy on [`HEROKU`](https://dashboard.heroku.com/new?template=https://github.com/Kingjux/venocyber-md-bot-qr).***
+2.  ***Deploy on [`HEROKU`](https://dashboard.heroku.com/new?template=https://github.com/Giftedmaurice/gifted-md-qr).***
 3.  ***Deploy on [`REPLIT`](https://replit.com/github/Kingjux/venocyber-md-bot-qr).***
 4. ***Deploy on [`RENDER`](https://dashboard.render.com/login).***
 ```
