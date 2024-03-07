@@ -14,13 +14,13 @@ const { Boom } = require("@hapi/boom");
 const PORT = process.env.PORT ||  5000
 const MESSAGE = process.env.MESSAGE ||  `
 ╔════◇
-║ *『 WOW YOU CHOOSEN GIFTED-MD 』*
-║ _You Have Completed the First Step to Deploy Whatsapp Bot._
+║ *『 WOW YOU CHOOSEN VENOCYBER-MD-BOT 』*
+║ _You Have Completed the First Step to Deploy Whatsapp Bot.enjoy your personal chuddy buddy created by venocyber king jux._
 ╚════════════════════════╝
 ╔═════◇
 ║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
-║ *Ytube:* _youtube.com/@giftedtechnexus_
-║ *Owner:* _https://wa.me/254728782591_
+║ *Ytube:* _youtube.com/@jastinmtewa_
+║ *Owner:* _https://wa.me/255698101622_
 ║ 
 ╚════════════════════════╝
 `
@@ -41,12 +41,12 @@ if (fs.existsSync('./auth_info_baileys')) {
   
   app.use("/", async(req, res) => {
 
-  const { default: GiftedWASocket, useMultiFileAuthState, Browsers, delay,DisconnectReason, makeInMemoryStore, } = require("@whiskeysockets/baileys");
+  const { default: VenocyberWASocket, useMultiFileAuthState, Browsers, delay,DisconnectReason, makeInMemoryStore, } = require("@whiskeysockets/baileys");
   const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
-  async function GIFTED() {
+  async function VENOCYBER() {
     const { state, saveCreds } = await useMultiFileAuthState(__dirname + '/auth_info_baileys')
     try {
-      let Smd =GiftedWASocket({ 
+      let Smd =VenocyberWASocket({ 
         printQRInTerminal: false,
         logger: pino({ level: "silent" }), 
         browser: Browsers.baileys("Desktop"),
@@ -93,16 +93,16 @@ SESSION-ID ==> ${Scan_Id}
             // console.log("Reason : ",DisconnectReason[reason])
             if (reason === DisconnectReason.connectionClosed) {
               console.log("Connection closed!")
-             // GIFTED().catch(err => console.log(err));
+             // VENOCYBER().catch(err => console.log(err));
             } else if (reason === DisconnectReason.connectionLost) {
                 console.log("Connection Lost from Server!")
-            //  GIFTEDL().catch(err => console.log(err));
+            //  VENOCYBERL().catch(err => console.log(err));
             } else if (reason === DisconnectReason.restartRequired) {
                 console.log("Restart Required, Restarting...")
-              GIFTED().catch(err => console.log(err));
+              VENOCYBER().catch(err => console.log(err));
             } else if (reason === DisconnectReason.timedOut) {
                 console.log("Connection TimedOut!")
-             // GIFTED().catch(err => console.log(err));
+             // VENOCYBER().catch(err => console.log(err));
             }  else {
                 console.log('Connection closed with bot. Please run again.');
                 console.log(reason)
@@ -126,12 +126,12 @@ SESSION-ID ==> ${Scan_Id}
 
 
 
-  GIFTED().catch(async(err) => {
+  VENOCYBER().catch(async(err) => {
     console.log(err)
     await fs.emptyDirSync(__dirname+'/auth_info_baileys'); 
 
 
-    //// MADE WITH GIFTED TECH
+    //// MADE WITH VENOCYBER TECH
 
 });
 
